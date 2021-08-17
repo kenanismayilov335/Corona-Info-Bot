@@ -1,64 +1,69 @@
-# Corona-Info-Bot
+# VCBOT
 
-A corona statistics and information telegram bot.
+Fully working VC (user)Bot, based on py-tgcalls and py-tgcalls-wrapper with minimal [features](#TODO).   
 
----
+## Deploying
 
-```
-Made with Python3
-(C) @FayasNoushad
-Copyright permission under MIT License
-License -> https://github.com/FayasNoushad/Corona-Info-Bot/blob/main/LICENSE
-```
+* To heroku:   
 
----
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](http://heroku.com/deploy?template=https://github.com/kenanismayilov335/Corona-Info-Bot)   
 
-## Deploy
+* Local machine/VPS:   
 
-<details>
-  <summary><b>Deploy on Heroku</b></summary>
-<br>
+`git clone https://github.com/xditya/VCBot`   
 
-<p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/FayasNoushad/Corona-Info-Bot/tree/main">
-     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
-  </a>
-</p>
+`pip install -r requirements.txt`   
 
-</details>
+`apt-get install ffmpeg`   
 
-<details>
-  <summary><b>Deploy in your vps</b></summary>
-<br>
-  
-```sh
-git clone https://github.com/FayasNoushad/Corona-Info-Bot/tree/main
-cd Corona-Info-Bot
-pip3 install -r requirements.txt
-# <Create Variables appropriately>
-python3 main.py
-```
+`touch .env && nano .env`, fill in the vars as in [.env.sample](./.env.sample)   
 
-</details>
-  
----
+`python bot.py`   
 
-## Variables
+## SESSION
 
-<details>
-  <summary><b>See variables</b></summary>
-<br>
+Either run [sessiongen.py](./sessiongen.py) locally or run it on [repl.it by clicking here.](https://replit.com/@xditya/PyroSessionGen)
 
-- `API_HASH` Your API Hash from my.telegram.org
-- `API_ID` Your API ID from my.telegram.org
-- `BOT_TOKEN` Your bot token from @BotFather
+## Commands:   
 
-</details>
+- `!on` - Check if the (user)bot is online.   
 
----
+- `!help` - Help message.   
+
+- `!stream` - Either give a youtube URL or reply to a telegram file to play it.   
+
+- `!pause` - Pause the stream.   
+
+- `!resume` - Yes, resume.   
+
+## Support
+
+- [@RobotRoom](https://t.me/RobotRoomChat)   
+
+## TODO
+
+(Contributions accepted, I'm lazy af.)    
+
+- A queue system.   
+
+- Play with song name.   
+
+- Auto-leave VC on song end.   
+
+- JoinVC/LeaveVC.   
+
+- Updater.   
 
 ## Credits
 
-- [Fayas Noushad](https://github.com/FayasNoushad)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Covid 19 API](https://api.sumanjay.cf/covid)
+- [pytgcalls](https://github.com/pytgcalls/pytgcalls)   
+
+- [pytgcalls-wrapper](https://github.com/callsmusic/pytgcalls-wrapper)   
+
+- [Pyrogram](https://github.com/pyrogram/pyrogram)   
+
+- [Me](https://github.com/xditya)   
+
+- Everyone who [contributed](https://github.com/xditya/VCBot/graphs/contributors).
+
+
